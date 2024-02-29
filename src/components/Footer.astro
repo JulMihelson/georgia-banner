@@ -1,7 +1,42 @@
 ---
+import Social from "@components/Social.astro";
 import { Image } from "astro:assets";
-import logo from "@assets/svg/miceandtravel_logo.svg"
+import logo from "@assets/svg/miceandtravel_logo.svg";
+import Contacts from "./ContactsGeorgia.astro";
+import ContactsGeorgia from "./ContactsGeorgia.astro";
+import ContactsAzerbaijan from "./ContactsAzerbaijan.astro";
+const currentYear = new Date().getFullYear();
 ---
-<footer class="bg-redWine">
-<Image src={logo} alt="mice and travel logo"/>
+
+<footer class="bg-redWine flex flex-nowrap justify-between items-center px-[100px] pt-[90px] pb-4">
+  <div class="flex flex-col flex-nowrap">
+    <Image
+      src={logo}
+      width="210"
+      height="95"
+      alt="mice and travel logo"
+      class="mb-[50px]"
+    />
+    <Social />
+    <div
+      class="text-white text-[10px] font-normal mt-[72px] flex flex-nowrap justify-center text-center"
+    >
+      Copyright &#169; 2016-{currentYear}. All rights reserved
+    </div>
+  </div>
+  <ContactsGeorgia />
+  <ul class="text-white text-xl flex flex-col flex-nowrap place-items-center gap-2">
+    <li class="uppercase">main links</li>
+    <li class="flex gap-5 justify-center my-4">
+      <div class="bg-accentRed w-[10px] h-[10px]"></div>
+      <div class="bg-accentRed w-[10px] h-[10px]"></div>
+      <div class="bg-accentRed w-[10px] h-[10px]"></div>
+    </li>
+    <li><a href="#">Climate</a></li>
+    <li><a href="#">Fauna</a></li>
+    <li><a href="#">Traditions</a></li>
+    <li><a href="#">Cuisine</a></li>
+    <li><a href="#">Hotels</a></li>
+  </ul>
+  <ContactsAzerbaijan/>
 </footer>

@@ -17,7 +17,7 @@ export default {
         transparent: "transparent",
         current: "currentColor",
         accentRed: "#ff0000c4",
-        bgWine: "#2B0000",
+        redWine: "#2B0000",
       },
       padding: {
         15: "60px",
