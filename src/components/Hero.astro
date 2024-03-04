@@ -1,0 +1,65 @@
+---
+import { Image } from "astro:assets";
+import mainimage from "@assets/images/mainimage.jpeg";
+import name from "@assets/svg/sacartvello.svg";
+import logo from "@assets/svg/miceandtravel_logo.svg";
+---
+
+<section class="relative ">
+  <Image
+    class="w-full max-h-[1080px] grayscale-50"
+    alt="georgia night view"
+    src={mainimage}
+  />
+  <div
+    class="absolute z-2 w-[392px] h-[1004px] left-[196px] top-[-92px] transform rotate-45 bg-customRed bg-opacity-60"
+  >
+  </div>
+  <div
+    class="absolute bg-customRed bg-opacity-77 w-[214px] h-[132px] top-[39px] left-[135px]"
+  >
+  </div>
+  <div
+    class="absolute bg-customRed bg-opacity-77 w-[160px] h-[160px] top-[861px] left-[337px]"
+  >
+  </div>
+  <div
+    class="absolute z-7 inset-0 bg-white bg-opacity-5 backdrop-blur-60 transform rotate-45 top-[58px] left-[-560px] w-[1113px] h-[1113px]"
+  >
+  </div>
+  <Image
+    class="absolute max-w-[870px] top-[39px] left-[349px]"
+    alt="сакартвелло"
+    src={name}
+  />
+  <div
+    class="absolute bg-customRed bg-opacity-77 w-[58px] h-[58px] left-[135px] top-[113px]"
+  >
+  </div>
+  <div
+    class="absolute z-600 bg-customRed bg-opacity-77 w-[72px] h-[72px] top-[1017px] left-[309px]"
+  >
+  </div>
+  <a href="#"><Image
+    class="absolute z-30 max-w-[210px] top-[55px] left-[123px]"
+    alt="логотип mice and travel"
+    src={logo}
+  /></a>
+  
+  <div class="absolute z-30 max-w-[560px] top-[512px] left-[100px] space-y-10">
+    <h1 class="font-semibold normal tracking-wider text-white text-5xl leading-snug">
+      GEORGIA - LAND OF WOLVES
+    </h1>
+    <div class="flex flex-col flex-nowrap justify-center items-center">
+          <p class="text-white text-[20px] mb-[31px]">
+        Georgian culture is an exotic, mysterious and ancient culture stretching
+        back for millennia.
+      </p>
+      <ul class="flex flex-row flex-nowrap gap-5">
+        <li class="bg-customRed w-[36px] h-[36px]"></li>
+        <li class="bg-customRed w-[36px] h-[36px]"></li>
+        <li class="bg-customRed w-[36px] h-[36px]"></li>
+      </ul>
+    </div>
+  </div>
+</section>

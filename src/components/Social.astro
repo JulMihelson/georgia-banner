@@ -9,7 +9,7 @@ const socials = await getCollection("social")
 
 <ul class="flex flex-row flex-nowrap justify-between gap-12">
     {socials.map((item)=>(
-        <li>
+        <li class="hover:scale-125 transition ease-in-out delay-150 hover:-translate-y-1 duration-200">
         <a href={item.data.url} >
            <Image  src={item.data.icon}
             width={27}

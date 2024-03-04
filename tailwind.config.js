@@ -6,18 +6,13 @@ export default {
       fontFamily: {
         "open-sans": ["Open Sans", "sans-serif"],
       },
-      lineHeight: {
-        140: "140%",
-      },
-      spacing: {
-        17: "4.25rem",
-        13: "3.25rem",
-      },
+
       colors: {
         transparent: "transparent",
         current: "currentColor",
         accentRed: "#ff0000c4",
         redWine: "#2B0000",
+        customRed: "#ff0000",
       },
       padding: {
         15: "60px",
@@ -27,6 +22,17 @@ export default {
       },
       screens: {
         xs: "480px",
+      },
+      rotate: {
+        45: "-45deg",
+      },
+      opacity: {
+        77: "77%",
+        55: "55%",
+      },
+
+      backdropBlur: {
+        60: "60px",
       },
     },
   },
