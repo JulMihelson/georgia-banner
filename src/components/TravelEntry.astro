@@ -3,21 +3,21 @@ import { Image } from "astro:assets";
 import ornament from "@assets/svg/ornament.svg"
 ---
 
-<div class="relative bg-redWine flex flex-col flex-nowrap justify-center pt-12 px-[245px] leading-snug ">
+<div class="relative w-full bg-redWine flex flex-col flex-nowrap justify-center pt-12 px-[245px] leading-snug xxs:pt-2 xxs:px-[40px]">
   <div class="flex flex-col flex-nowrap items-center justify-center">
-    <h2 class="text-5xl text-white font-normal uppercase mb-[16px]">georgia</h2>
+    <h2 class="text-5xl text-white font-normal uppercase mb-[16px] xxs:hidden">georgia</h2>
     <div
-      class="bg-gradient-to-r from-accentRed via-white to-accentRed w-[120px] h-[2px]"
+      class="bg-gradient-to-r from-accentRed via-white to-accentRed w-[120px] h-[2px] xxs:hidden"
     >
     </div>
     <div
-      class="flex flex-col text-white text-xl mt-12 mb-[100px] gap-10 text-center max-w-[1430px]"
+      class="flex flex-col text-white text-xl mt-12 mb-[100px] gap-10 text-center max-w-[1430px] xxs:text-text-2xl xxs:mb-[40px]"
     >
-      <div>
+      <div class="xxs:hidden">
         Georgia is the bassinet of Wine. It has been producing wine for more
         than 8000 years.
       </div>
-      <div>
+      <div class="xxs:hidden">
         Georgia, the Eurasian country in the Caucasus region, is the country at
         the Intersection of Europe and Asia. It is known as the land of wolves.
         That is to say, because the Persian translation of Georgia is 'wolf
@@ -27,32 +27,33 @@ import ornament from "@assets/svg/ornament.svg"
         ethnic identity resulting in one of the most unique and hospitable
         cultures in the world.
       </div>
-      <div>
+      <div class="xxs:hidden">
         The country has 12 different climate zones and is considered the most
         biodiverse place in the world.
       </div>
-      <div class="text-6xl uppercase mt-[100px]">section is under construction</div>
+      <div class="text-6xl uppercase mt-[100px] xxs:text-text-2xl xxs:mt-0">section is under construction</div>
     </div>
  <Image alt="test" src={ornament}/>
   <div
-    class="absolute z-600 bg-customRed bg-opacity-77 w-[38px] h-[38px] top-[42px] right-[28px]"
+    class="absolute z-600 bg-customRed bg-opacity-77 w-[38px] h-[38px] top-[42px] right-[28px] xxs:hidden"
   >
   </div>
    <div
-    class="absolute z-600 bg-customRed bg-opacity-77 w-[160px] h-[160px] top-[325px] right-[-33px]"
+    class="absolute z-600 bg-customRed bg-opacity-77 w-[160px] h-[160px] top-[325px] right-[-33px] xxs:hidden"
   >
   </div>
   <div
-    class="absolute z-600 bg-customRed bg-opacity-55 w-[238px] h-[238px] top-[401px] right-[-29px]"
+    class="absolute z-600 bg-customRed bg-opacity-55 w-[238px] h-[238px] top-[401px] right-[-29px] xxs:hidden"
   >
   </div>
   <div
-    class="absolute z-600 bg-customRed bg-opacity-55 w-[38px] h-[38px] top-[441px] left-[62px]"
+    class="absolute z-600 bg-customRed bg-opacity-55 w-[38px] h-[38px] top-[441px] left-[62px] xxs:hidden"
   >
   </div>
   <div
-    class="absolute z-600 bg-customRed bg-opacity-77 w-[25px] h-[25px] top-[392px] left-[113px]"
+    class="absolute z-600 bg-customRed bg-opacity-77 w-[25px] h-[25px] top-[392px] left-[113px] xxs:hidden"
   >
   </div>
 
+</div>
 </div>

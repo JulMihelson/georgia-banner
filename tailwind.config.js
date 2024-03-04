@@ -21,6 +21,7 @@ export default {
         container: "1280px",
       },
       screens: {
+        xxs: "374px",
         xs: "480px",
       },
       rotate: {
