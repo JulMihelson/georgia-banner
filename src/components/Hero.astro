@@ -5,73 +5,78 @@ import name from "@assets/svg/sacartvello.svg";
 import logo from "@assets/svg/miceandtravel_logo.svg";
 ---
 
-<section class="relative truncate w-full">
-<div class="bg-redWine xxs:min-h-[300px] md:hidden"></div>
+<section class="relative truncate">
+<div class="bg-redWine xxs:min-h-[300px] md:hidden lg:hidden"></div>
   <Image
-    class="w-full max-h-[1080px] grayscale-50  xxs:z-10"
+    class="w-full max-h-[1080px] grayscale-50 md:max-h-[838px]"
     alt="georgia night view"
     src={mainimage}
   />
   <div
-    class="absolute z-2 w-[392px] h-[1004px] left-[196px] top-[-92px] transform rotate-45 bg-customRed bg-opacity-60 xxs:w-[240px] xxs:h-[210px] xxs:top-[-100px] xxs:left-[0px] xxs:bg-opacity-40"
+    class="absolute z-2 transform rotate-45 bg-customRed bg-opacity-60 lg:w-[392px] lg:h-[1004px] lg:left-[196px] lg:top-[-92px]  xxs:w-[240px] xxs:h-[210px] xxs:top-[-100px] xxs:left-[0px] xxs:bg-opacity-40 md:w-[190px] md:h-[540px] md:left-[120px] md:top-[-140px]"
+  >
+  </div>
+  
+  <div
+    class="absolute bg-customRed bg-opacity-77 lg:w-[214px] lg:h-[132px] lg:top-[39px] lg:left-[135px] xxs:transform xxs:rotate-45 md:rotate-0  xxs:bg-opacity-55 xxs:top-[250px] xxs:right-[400px] xxs:hidden lg:block"
   >
   </div>
   <div
-    class="absolute z-2 w-[392px] h-[1004px] left-[196px] top-[-92px] transform rotate-45 bg-customRed bg-opacity-60 xxs:w-[125px] xxs:h-[125px] xxs:top-[238px] xxs:left-[85%] xxs:bg-opacity-55 xxs:hidden"
+    class="absolute bg-customRed bg-opacity-77 lg:w-[160px] lg:h-[160px] lg:top-[861px] lg:left-[337px] xxs:hidden md:block md:w-[28px] md:h-[28px] md:top-[380px] md:left-[300px]"
   >
   </div>
   <div
-    class="absolute z-3 bg-customRed bg-opacity-77 w-[214px] h-[132px] top-[39px] left-[135px] xxs:transform xxs:rotate-45 xxs:bg-opacity-55 xxs:top-[250px] xxs:right-[400px] xxs:hidden"
-  >
-  </div>
-  <div
-    class="absolute bg-customRed bg-opacity-77 w-[160px] h-[160px] top-[861px] left-[337px] xxs:hidden"
-  >
-  </div>
-  <div
-    class="absolute z-7 inset-0 bg-white bg-opacity-5 backdrop-blur-60 transform rotate-45 top-[58px] left-[-560px] w-[1113px] h-[1113px] xxs:w-[319px] xxs:h-[319px] xxs:top-[-160px] xxs:left-[-160px]"
+    class="absolute z-7 inset-0 bg-white bg-opacity-5 backdrop-blur-60 transform rotate-45 lg:top-[58px] lg:left-[-560px] lg:w-[1113px] lg:h-[1113px] xxs:w-[319px] xxs:h-[319px] xxs:top-[-160px] xxs:left-[-160px] md:w-[884px] md:h-[884px] xxs:top-[-185px] xxs:left-[-642px]"
   >
   </div>
   <Image
-    class="absolute max-w-[870px] top-[39px] left-[349px] xxs:hidden"
+    class="absolute lg:max-w-[870px] lg:top-[39px] lg:left-[349px] xxs:hidden md:block md:top-[0px] md:left-[77px] md:max-w-[580px]"
     alt="сакартвелло"
     src={name}
   />
-  <a class="absolute block z-999 lg:top-[55px] lg:left-[123px] top-[30px] right-[20px] " href="#">
+  <div
+    class="absolute bg-customRed bg-opacity-77 w-[58px] h-[58px] left-[135px] top-[113px] xxs:hidden xs:hidden md:hidden"
+  >
+  </div>
+  <div
+    class="absolute z-600 bg-customRed bg-opacity-77 w-[72px] h-[72px] top-[1017px] left-[309px] xxs:hidden xs:hidden md:hidden"
+  >
+  </div>
+  <a class="absolute block w-fit z-30 lg:top-[55px] lg:left-[123px] xxs:top-[30px] xxs:right-[20px] md:top-[39px] md:left-[83px] !md:z-600" href="#">
     <Image
-    class="max-w-[210px] xxs:max-w-[62px] xxs:max-h-[30px] sm:max-w-[124px] sm:max-h-[60px] "
+    class="md:max-w-[210px] xxs:max-w-[62px] xxs:max-h-[30px] sm:max-w-[124px] sm:max-h-[60px] !md:z-600 "
     alt="логотип mice and travel"
     src={logo}
   /></a>
-  <div
-    class="absolute bg-customRed bg-opacity-77 w-[58px] h-[58px] left-[135px] top-[113px] xxs:hidden"
+  <!-- <div
+    class="absolute bg-customRed bg-opacity-77 w-[58px] h-[58px] left-[135px] top-[113px] xxs:hidden md:block md:w-[88px] md:h-[58px] md:z-0 md:top-[30px] md:left-[150px]"
   >
   </div>
   <div
-    class="absolute z-600 bg-customRed bg-opacity-77 w-[72px] h-[72px] top-[1017px] left-[309px] xxs:hidden"
+    class="absolute z-600 bg-customRed bg-opacity-77 w-[72px] h-[72px] top-[1017px] left-[309px] xxs:hidden md:block md:w-[58px] md:h-[58px] md:top-[370px] md:left-[231px]"
   >
-  </div>
+  </div> -->
   
   
   <div
-  class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 md:max-w-[560px] lg:top-[512px] lg:left-[100px] space-y-10 xxs:space-y-4 xxs:max-w-[318px] sm:max-w-[460px]"
+  class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 lg:max-w-[560px] lg:top-[512px] lg:left-[300px] space-y-10 xxs:space-y-4 xxs:max-w-[318px] sm:max-w-[460px] md:max-w-[260px] md:top-[250px] md:left-[160px] xxs:top-[200px] xs:top-[200px] md:text-wrap"
 >
   <h1
-    class="font-semibold normal tracking-wider text-white text-5xl leading-snug xxs:text-2xl sm:text-4xl"
+    class="font-semibold normal tracking-wider text-white text-5xl leading-snug xxs:text-2xl sm:text-4xl md:text-3xl lg:text-5xl"
   >
     GEORGIA - LAND OF WOLVES
   </h1>
-  <div class="flex flex-col flex-nowrap justify-center items-center ">
+  <div class="flex flex-col flex-nowrap  justify-center items-center ">
     <p
-      class="text-white text-[20px] mb-[31px] xxs:text-balance xxs:text-base flex items-center justify-center w-full sm:text-xl "
+      class="text-white text-[20px] mb-[31px] xxs:text-balance xxs:text-base flex items-center justify-center w-full sm:text-xl lg:text-3xl"
     >
       Georgian culture is an exotic, mysterious and ancient culture stretching
       back for millennia.
     </p>
     <ul class="flex flex-row flex-nowrap gap-5">
-      <li class="bg-customRed w-[36px] h-[36px] xxs:w-[20px] xxs:h-[20px]"></li>
-      <li class="bg-customRed w-[36px] h-[36px] xxs:w-[20px] xxs:h-[20px]"></li>
-      <li class="bg-customRed w-[36px] h-[36px] xxs:w-[20px] xxs:h-[20px]"></li>
+      <li class="bg-customRed lg:w-[36px] lg:h-[36px] xxs:w-[20px] xxs:h-[20px]"></li>
+      <li class="bg-customRed lg:w-[36px] lg:h-[36px] xxs:w-[20px] xxs:h-[20px]"></li>
+      <li class="bg-customRed lg:w-[36px] lg:h-[36px] xxs:w-[20px] xxs:h-[20px]"></li>
     </ul>
   </div>
 </div>

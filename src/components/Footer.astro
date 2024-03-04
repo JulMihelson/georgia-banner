@@ -8,24 +8,24 @@ import ContactsAzerbaijan from "./ContactsAzerbaijan.astro";
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="relative bg-redWine flex flex-nowrap justify-between items-center px-[100px] pt-[90px] pb-4 xxs:pb-8 xxs:px-5 xxs:flex-col xxs:pt-12 sm:flex-row sm:flex-nowrap sm:gap-14">
+<footer class="relative w-full bg-redWine flex flex-nowrap justify-between items-center lg:px-[100px] pt-[90px] pb-4 xxs:pb-8 xxs:px-5 xxs:flex-col xxs:pt-12 sm:flex-row sm:flex-nowrap sm:gap-14">
   <div class="flex flex-col flex-nowrap">
     <Image
       src={logo}
       width="210"
       height="95"
       alt="mice and travel logo"
-      class="mb-[50px] sm:w-[130px]"
+      class="mb-[50px] sm:w-[130px] lg:w-[210px]"
     />
     <Social />
     <div
-      class="text-white text-[10px] font-normal mt-[72px] flex flex-nowrap justify-center text-center xxs:absolute xxs:inset-x-0 xxs:bottom-0 xxs:mt-4"
+      class="text-white text-[10px] font-normal lg:mt-[72px] flex flex-nowrap justify-center text-center xxs:absolute xxs:inset-x-0 xxs:bottom-3 xxs:mt-4 md:mb-2 lg:static"
     >
       Copyright &#169; 2016-{currentYear}. All rights reserved
     </div>
   </div>
   <ContactsGeorgia />
-  <ul class="text-white text-xl flex flex-col flex-nowrap place-items-center gap-2 xxs:hidden">
+  <ul class="text-white text-xl flex flex-col flex-nowrap place-items-center gap-2 xxs:hidden lg:block">
     <li class="uppercase">main links</li>
     <li class="flex gap-5 justify-center my-4">
       <div class="bg-accentRed w-[10px] h-[10px]"></div>

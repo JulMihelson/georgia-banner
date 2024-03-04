@@ -3,21 +3,21 @@ import { Image } from "astro:assets";
 import ornament from "@assets/svg/ornament.svg"
 ---
 
-<div class="relative w-full bg-redWine flex flex-col flex-nowrap justify-center pt-12 px-[245px] leading-snug xxs:pt-2 xxs:px-[40px]">
+<div class="relative bg-redWine flex flex-col flex-nowrap justify-center lg:pt-12 lg:px-[245px] leading-snug xxs:pt-2 xxs:px-[40px]">
   <div class="flex flex-col flex-nowrap items-center justify-center">
-    <h2 class="text-5xl text-white font-normal uppercase mb-[16px] xxs:hidden">georgia</h2>
+    <h2 class="lg:text-5xl text-white font-normal uppercase lg:mb-[16px] xxs:hidden xs:hidden md:hidden lg:mt-12 lg:block">georgia</h2>
     <div
-      class="bg-gradient-to-r from-accentRed via-white to-accentRed w-[120px] h-[2px] xxs:hidden"
+      class="bg-gradient-to-r from-accentRed via-white to-accentRed lg:w-[120px] lg:h-[2px] xxs:hidden xs:hidden md:hidden lg:block "
     >
     </div>
     <div
-      class="flex flex-col text-white text-xl mt-12 mb-[100px] gap-10 text-center max-w-[1430px] xxs:text-text-2xl xxs:mb-[40px]"
+      class="flex flex-col text-white lg:text-xl lg:mt-12 lg:mb-[100px] gap-10 lg:text-center lg:max-w-[1430px] xxs:text-2xl xxs:mb-[40px]"
     >
-      <div class="xxs:hidden">
+      <div class="xxs:hidden xs:hidden md:hidden lg:block">
         Georgia is the bassinet of Wine. It has been producing wine for more
         than 8000 years.
       </div>
-      <div class="xxs:hidden">
+      <div class="xxs:hidden xs:hidden md:hidden lg:block">
         Georgia, the Eurasian country in the Caucasus region, is the country at
         the Intersection of Europe and Asia. It is known as the land of wolves.
         That is to say, because the Persian translation of Georgia is 'wolf
@@ -27,31 +27,31 @@ import ornament from "@assets/svg/ornament.svg"
         ethnic identity resulting in one of the most unique and hospitable
         cultures in the world.
       </div>
-      <div class="xxs:hidden">
+      <div class="xxs:hidden xs:hidden md:hidden lg:block">
         The country has 12 different climate zones and is considered the most
         biodiverse place in the world.
       </div>
-      <div class="text-6xl uppercase mt-[100px] xxs:text-text-2xl xxs:mt-0">section is under construction</div>
+      <div class="xs:text-4xl xs:mt-[60px] lg:text-6xl uppercase lg:mt-[100px] xxs:text-2xl xxs:mt-5 xxs:text-center">section is under construction</div>
     </div>
  <Image alt="test" src={ornament}/>
   <div
-    class="absolute z-600 bg-customRed bg-opacity-77 w-[38px] h-[38px] top-[42px] right-[28px] xxs:hidden"
+    class="absolute z-600 bg-customRed bg-opacity-77 lg:w-[38px] lg:h-[38px] lg:top-[42px] lg:right-[28px] xxs:hidden xs:hidden md:hidden lg:block"
   >
   </div>
    <div
-    class="absolute z-600 bg-customRed bg-opacity-77 w-[160px] h-[160px] top-[325px] right-[-33px] xxs:hidden"
+    class="absolute z-600 bg-customRed bg-opacity-77 lg:w-[160px] lg:h-[160px] lg:top-[325px] lg:right-[0px] xxs:hidden lg:block"
   >
   </div>
   <div
-    class="absolute z-600 bg-customRed bg-opacity-55 w-[238px] h-[238px] top-[401px] right-[-29px] xxs:hidden"
+    class="absolute z-600 bg-customRed bg-opacity-55 lg:w-[238px] lg:h-[238px] lg:top-[401px] lg:right-[0px] xxs:hidden lg:block"
   >
   </div>
   <div
-    class="absolute z-600 bg-customRed bg-opacity-55 w-[38px] h-[38px] top-[441px] left-[62px] xxs:hidden"
+    class="absolute z-600 bg-customRed bg-opacity-55 lg:w-[38px] lg:h-[38px] lg:top-[441px] lg:left-[62px] xxs:hidden lg:block"
   >
   </div>
   <div
-    class="absolute z-600 bg-customRed bg-opacity-77 w-[25px] h-[25px] top-[392px] left-[113px] xxs:hidden"
+    class="absolute z-600 bg-customRed bg-opacity-77 lg:w-[25px] lg:h-[25px] lg:top-[392px] lg:left-[113px] xxs:hidden lg:block"
   >
   </div>
 
