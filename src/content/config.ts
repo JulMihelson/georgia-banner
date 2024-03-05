@@ -10,7 +10,18 @@ const social = defineCollection({
     }),
 });
 
-const contacts = defineCollection({
+const contactsge = defineCollection({
+  type: "content",
+  schema: ({ image }) =>
+    z.object({
+      name: z.string(),
+      url: z.string(),
+      icon: image(),
+      text: z.string(),
+    }),
+});
+
+const contactsaz = defineCollection({
   type: "content",
   schema: ({ image }) =>
     z.object({
@@ -23,5 +34,6 @@ const contacts = defineCollection({
 
 export const collections = {
   social,
-  contacts,
+  contactsge,
+  contactsaz,
 };
