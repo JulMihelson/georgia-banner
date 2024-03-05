@@ -2,13 +2,13 @@
 import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 
-const socials = await getCollection("social")
+const social = await getCollection("social")
 
 
 ---
 
 <ul class="flex flex-nowrap justify-between lg:gap-12 sm:gap-4">
-    {socials.map((item)=>(
+    {social.map((item)=>(
         <li class="hover:scale-125 transition ease-in-out delay-150 hover:-translate-y-1 duration-200">
         <a href={item.data.url} >
            <Image  src={item.data.icon}
