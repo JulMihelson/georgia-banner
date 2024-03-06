@@ -4,10 +4,10 @@ import { getCollection } from "astro:content";
 const contacts = await getCollection("contactsaz");
 ---
 
-<ul class="gap-6 xxs:mt-12">
+<ul class="gap-6 xxs:mt-12 less:mb-12">
   {
     contacts.map((item) => (
-      <li class="last:max-w-[219px] mb-6 hover:scale-125 transition ease-in-out delay-150 hover:-translate-y-1 duration-200">
+      <li class="last:max-w-[219px] mb-6 hover:scale-125 transition ease-in-out delay-150 hover:-translate-y-1 duration-200 ">
         <a href={item.data.url} class="flex flex-nowrap gap-4" >
           <Image alt="contact line" width={30} height={30} src={item.data.icon} />
           <div class="text-white lg:text-xl flex flex-wrap sm:text-base">{item.data.text}</div>

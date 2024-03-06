@@ -21,6 +21,7 @@ export default {
         container: "1280px",
       },
       screens: {
+        less: "280px",
         xxs: "374px",
         xs: "480px",
       },
